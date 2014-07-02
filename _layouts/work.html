@@ -1,0 +1,22 @@
+---
+layout: my-site
+---
+
+<!-- +++++ Projects Section +++++ -->
+
+<div class="container pt">
+	<div class="row mt">
+		<div class="col-lg-6 col-lg-offset-3 centered">
+			<h3>{{ page.title }}</h3>
+			<hr>
+			<p>{{ page.description }}</p>
+		</div>
+	</div>
+	<div class="row mt centered">
+        <p>{{ content }}</p>
+	</div><!-- /row -->
+	<div class="row mt centered">	
+		<p><bt>Client: <a href="#">{{ page.client }}</a></bt> - <bt>Type: <a href="#">{{ page.type }}</a></bt> - <bt>Date: <a href="#">{{ page.date | date: "%B %-d, %Y" }}</a></bt></p>
+	</div>
+	
+</div><!-- /container -->

@@ -19,10 +19,16 @@ defaults:
   -
     scope:
       path: ""
+      type: "page"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
       type: "post"
     values:
       layout: "post"    
-      author: "Your name"
+      author: "Stanley Stinson"
       date: ""
       title: ""
       category: ""

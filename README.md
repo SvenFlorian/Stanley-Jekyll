@@ -18,6 +18,20 @@ Dribbble shots used in this theme are from the awesome designer [David Creighton
 Usage
 ----
 
+Update the base-url in `_config.yml` to either `""` if it's your personal github io page, or to `"/project-name"` if it is a project of yours. In  `post-commit.sh`, change the branches as appropriate. Also update the branch name in the if-clause, depending on from which branch you want to publish things. 
+
+To set up the git hook, run: `ln -s ../../pre-commit.sh .git/hooks/pre-commit`.
+You might need to update permissions for the hook to run, in that case do `chmod +x .git/hooks/post-commit`.
+
+If you want to publish/update your webpage, just commit in the appropriate branch and the git hook will do the rest and publish the site to github.
+
+Note:
+This solution uses a temporary branch `tmp`, so if you already have a branch that is called so, this will probably not work.
+
+
+Old Usage Instructions
+----
+
 It is currently not a seamless experience to use this theme with GitHub Pages, despite the 'v1.0'-tag. GitHub Pages uses Jekyll version 1.5.1, whereas this project was developed for version 2.0.3 and newer. It is possible to host your site anyways, but it's a bit tedious effort required. 
 
 1. Build the project locally with `jekyll build`

@@ -3,8 +3,8 @@
   <channel>
     <title>Your awesome title</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://yourdomain.comStanley-Jekyll//</link>
+    <atom:link href="http://yourdomain.comStanley-Jekyll//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -23,8 +23,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 
 </description>
         <pubDate>Fri, 03 Jan 2014 01:36:29 +0100</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2014/01/03/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2014/01/03/welcome-to-jekyll/</guid>
+        <link>http://yourdomain.comStanley-Jekyll//jekyll/update/2014/01/03/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://yourdomain.comStanley-Jekyll//jekyll/update/2014/01/03/welcome-to-jekyll/</guid>
       </item>
     
       <item>
@@ -34,8 +34,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;p&gt;It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.&lt;/p&gt;
 &lt;p&gt;It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;</description>
         <pubDate>Fri, 03 Jan 2014 00:00:00 +0100</pubDate>
-        <link>http://yourdomain.com/2014/01/03/an-image-post/</link>
-        <guid isPermaLink="true">http://yourdomain.com/2014/01/03/an-image-post/</guid>
+        <link>http://yourdomain.comStanley-Jekyll//2014/01/03/an-image-post/</link>
+        <guid isPermaLink="true">http://yourdomain.comStanley-Jekyll//2014/01/03/an-image-post/</guid>
       </item>
     
       <item>
@@ -43,8 +43,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
         <description>&lt;p&gt;This is a text about Drupal, isn’t it cool?&lt;/p&gt;
 </description>
         <pubDate>Wed, 21 Mar 2012 13:36:29 +0100</pubDate>
-        <link>http://yourdomain.com/drupal/2012/03/21/drupal/</link>
-        <guid isPermaLink="true">http://yourdomain.com/drupal/2012/03/21/drupal/</guid>
+        <link>http://yourdomain.comStanley-Jekyll//drupal/2012/03/21/drupal/</link>
+        <guid isPermaLink="true">http://yourdomain.comStanley-Jekyll//drupal/2012/03/21/drupal/</guid>
       </item>
     
   </channel>

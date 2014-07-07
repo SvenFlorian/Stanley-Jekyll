@@ -20,7 +20,7 @@ Usage
 
 Update the base-url in `_config.yml` to either `""` if it's your personal github io page, or to `"/project-name"` if it is a project of yours. In  `post-commit.sh`, change the branches as appropriate. Also update the branch name in the if-clause, depending on from which branch you want to publish things. 
 
-To set up the git hook, run: `ln -s ../../pre-commit.sh .git/hooks/pre-commit`.
+To set up the git hook, run: `ln -s ../../post-commit.sh .git/hooks/post-commit`.
 You might need to update permissions for the hook to run, in that case do `chmod +x .git/hooks/post-commit`.
 
 If you want to publish/update your webpage, just commit in the appropriate branch and the git hook will do the rest and publish the site to github.

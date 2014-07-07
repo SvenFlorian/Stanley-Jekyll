@@ -1,7 +1,0 @@
----
-title:  "Welcome to Drupal!"
-date:   2012-03-21 12:36:29
-categories: drupal
----
-
-This is a text about Drupal, isn't it cool?

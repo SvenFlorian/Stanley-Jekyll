@@ -13,8 +13,8 @@ layout: my-site
 					<p>{% if page.img %}<img class="img-responsive" src="{{ page.img }}" alt="">{% endif %}</p>
 					<p>{{ content }}</p>
 					<br>
-					<p><bt>Category: {% for category in page.categories %} <a href="#">{{ category }}</a> {% endfor %}</bt></p>
-					<p><bt>Tags: {% for tag in page.tags %} <a href="#">{{ tag }}</a> {% endfor %}</bt></p>					
+					<!-- <p><bt>Category: {% for category in page.categories %} <a href="#">{{ category }}</a> {% endfor %}</bt></p> -->
+					<p><bt>Tags: {% for tag in page.tags %} <a href="{{ tag | prepend: "/tag/" }}">{{ tag }}</a> {% endfor %}</bt></p>					
 					<hr>
 					<p><a href="{{ "/blog/" | prepend: site.baseurl }}"># Back</a></p>
 				</div>

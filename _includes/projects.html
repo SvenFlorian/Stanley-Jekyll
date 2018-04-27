@@ -1,0 +1,17 @@
+<!-- +++++ Projects Section +++++ -->
+
+<div class="container pt">
+    {% for work in site.work %}
+    {% if work.published == true %}
+    {% cycle 'add rows': '<div class="row mt centered">', '', '' %}
+
+    <div class="col-lg-4">
+        <a class="zoom green" href="{{ work.url | prepend: site.baseurl }}"><img class="img-responsive" src="{{ work.img }}" alt="" /></a>
+        <p>{{ work.title }}</p>
+    </div>
+
+    {% cycle 'close rows': '', '', '</div>' %}
+    {% endif %}
+    {% endfor %}
+    {% cycle 'close rows': '', '</div>', '</div>' %}
+</div><!-- /container -->

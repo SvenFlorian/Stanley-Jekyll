@@ -1,0 +1,16 @@
+<!-- +++++ Welcome Section +++++ -->
+<div id="ww">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                {% if page.hero.image %}
+                <img src="{{ page.hero.image }}" alt="Stanley">
+                {% endif %}
+                {% if page.hero.heading %}
+                <h1>{{ page.hero.heading }}</h1>
+                {% endif %}
+                {{ page.hero.text }}
+            </div><!-- /col-lg-8 -->
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /ww -->

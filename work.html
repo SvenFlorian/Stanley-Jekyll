@@ -19,7 +19,7 @@ layout: default
 			{% cycle 'add rows': '<div class="row mt centered">', nil, nil %}
 		
 				<div class="col-lg-4">
-					<a class="zoom green" href="{{ work.url | prepend: site.baseurl }}"><img class="img-responsive" src="{{ work.img }}" alt="" /></a>
+					<a class="zoom green" href="{{ work.url | prepend: site.baseurl }}"><img class="img-responsive" src="{{ work.img  | prepend: site.baseurl }}" alt="" /></a>
 					<p>{{ work.title }}</p>
 				</div>
 			

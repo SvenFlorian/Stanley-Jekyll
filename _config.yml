@@ -36,6 +36,11 @@ footer:
 markdown: kramdown
 permalink: pretty
 
+# Sass/SCSS
+sass:
+  sass_dir: _scss
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
 # Add custom collections
 collections:
   work:

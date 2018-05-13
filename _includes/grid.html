@@ -1,0 +1,19 @@
+{% assign projects = include.grid | default: page.grid %}
+
+<!-- +++++ Projects Section +++++ -->
+<div class="container pt">
+    {% for work in projects %}
+    {% if work.published == true %}
+    {% cycle 'add rows': '<div class="row mt centered">', '', '' %}
+
+    <div class="col-lg-4">
+        <a class="zoom green" href="{{ work.url | prepend: site.baseurl }}"><img class="img-responsive center-block" src="{{ work.image }}" alt="" /></a>
+        <h3><a href="{{ work.url }}">{{ work.title }}</a></h3>
+        <p>{{ work.description }}</p>
+    </div>
+
+    {% cycle 'close rows': '', '', '</div>' %}
+    {% endif %}
+    {% endfor %}
+    {% cycle 'close rows': '', '</div>', '</div>' %}
+</div><!-- /container -->

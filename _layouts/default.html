@@ -5,9 +5,9 @@ layout: base
 <div class="page-content">
     <div class="wrap">
         <div class="container pt">
-            {% if page.show_headline %}
+            {% unless page.hide_headline == true %}
                 {% include headline.html %}
-            {% endif%}
+            {% endunless %}
             {{ content }}
         </div>
     </div>

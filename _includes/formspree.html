@@ -1,0 +1,27 @@
+{% assign email = include.email | default: site.email %}
+<!-- +++++ Contact Section +++++ -->
+
+<div class="container pt">
+    <div class="row mt">
+        <div class="col-lg-8 col-lg-offset-2">
+            <form role="form" action="https://formspree.io/{{ email }}" method="POST" >
+                <div class="form-group">
+                    <input type="text" class="form-control" id="NameInputEmail1" name="name" placeholder="Your Name">
+                    <br>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="_replyto" placeholder="Enter email">
+                    <br>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subjectEmail1" name="_subject" placeholder="Subject">
+                    <br>
+                </div>
+                <textarea class="form-control" rows="6" placeholder="Enter your text here" name="message"></textarea>
+                <br>
+                <input type="text" name="_gotcha" style="display:none" />
+                <button type="submit" class="btn btn-success">SUBMIT</button>
+            </form>
+        </div>
+    </div><!-- /row -->
+</div><!-- /container -->

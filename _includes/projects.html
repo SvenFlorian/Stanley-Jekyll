@@ -6,7 +6,7 @@
     {% cycle 'add rows': '<div class="row mt centered">', '', '' %}
 
     <div class="col-lg-4">
-        <a class="zoom green" href="{{ work.url | prepend: site.baseurl }}"><img class="img-responsive" src="{{ work.img }}" alt="" /></a>
+        <a class="zoom green" href="{{ work.url | relative_url }}"><img class="img-responsive" src="{{ work.img | relative_url }}" alt="" /></a>
         <p>{{ work.title }}</p>
     </div>
 

@@ -8,8 +8,8 @@
     {% cycle 'add rows': '<div class="row mt centered">', '', '' %}
 
     <div class="col-lg-4{% if count == 2 %} col-lg-offset-1{% endif%}">
-        <a class="zoom green" href="{{ work.url | prepend: site.baseurl }}"><img class="img-responsive center-block" src="{{ work.image }}" alt="" /></a>
-        <h3><a href="{{ work.url }}">{{ work.title }}</a></h3>
+        <a class="zoom green" href="{{ work.url | relative_url }}"><img class="img-responsive center-block" src="{{ work.image }}" alt="" /></a>
+        <h3><a href="{{ work.url | relative_url }}">{{ work.title }}</a></h3>
         <p>{{ work.description }}</p>
     </div>
 

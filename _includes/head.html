@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" href="{{ "favicon.png" | relative_url }}">
+    <link rel="canonical" href="{{ page.url | relative_url }}">
 
-    <link rel="stylesheet" href="{{ "/assets/css/bootstrap.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/bootstrap.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="{{ "/assets/js/hover.zoom.js" | prepend: site.baseurl }}" ></script>
-    <script src="{{ "/assets/js/hover.zoom.conf.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/js/hover.zoom.js" | relative_url }}" ></script>
+    <script src="{{ "/assets/js/hover.zoom.conf.js" | relative_url }}"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -21,4 +21,3 @@
       <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-

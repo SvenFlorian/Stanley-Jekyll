@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 centered">
                 {% if page.hero.image %}
-                <img src="{{ page.hero.image }}" alt="Stanley">
+                <img src="{{ page.hero.image | relative_url }}" alt="{{ page.hero.image_alt }}">
                 {% endif %}
                 {% if page.hero.heading %}
                 <h1>{{ page.hero.heading }}</h1>

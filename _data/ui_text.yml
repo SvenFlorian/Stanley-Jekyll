@@ -25,5 +25,6 @@ en-AU:
 # Danish
 # ------
 da: &DEFAULT_DA
+  contact_form_submit        : "Send"
 da-DK:
   <<: *DEFAULT_DA

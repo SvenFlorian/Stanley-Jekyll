@@ -1,0 +1,24 @@
+# User interface text and labels
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  contact_form_subject       : "Subject"
+  contact_form_name          : "Name"
+  contact_form_email         : "Email Address"
+  contact_form_message       : "Message"
+  contact_form_submit        : "Submit"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Danish
+# ------
+da: &DEFAULT_DA
+da-DK:
+  <<: *DEFAULT_DA

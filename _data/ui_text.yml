@@ -3,6 +3,8 @@
 # English (default)
 # -----------------
 en: &DEFAULT_EN
+  category                   : "Category"
+  tags                       : "Tags"
   client                     : "Client"
   type                       : "Type"
   date                       : "Date"

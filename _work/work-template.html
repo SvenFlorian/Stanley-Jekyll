@@ -1,5 +1,5 @@
 --- 
-published: false  # set to true to show # 
+published: false # set to true to show
 layout: work
 title: Work Title Template
 date: 2014-07-02
@@ -14,5 +14,5 @@ description: It is a long established fact that a reader will be distracted by t
 <div class="col-lg-8 col-lg-offset-2">
     <p>More content here.</p>
     <p><img class="img-responsive center-img" src="/assets/img/portfolio/port01.jpg" alt="Image example" /></p>
-    <p><img class="img-responsive center-img" src="{{ page.img }}" alt="Image example" /></p>
+    <p><img class="img-responsive center-img" src="{{ page.img | relative_url }}" alt="Image example" /></p>
 </div>

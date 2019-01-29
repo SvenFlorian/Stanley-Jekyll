@@ -10,11 +10,11 @@ layout: base
 					<p><img src="{{ "/assets/img/user.png" | relative_url }}" width="50px" height="50px"> <ba>{{ page.author }}</ba></p>
 					<p><bd>{{ page.date | date: "%B %-d, %Y" }}</bd></p>
 					<h4>{{ page.title }}</h4>
-					<p>{% if page.img | relative_url %}<img class="img-responsive" src="{{ page.img }}" alt="">{% endif %}</p>
+					<p>{% if page.img %}<img class="img-responsive" src="{{ page.img | relative_url }}" alt="">{% endif %}</p>
 					<p>{{ content }}</p>
 					<br>
-					<p><bt>Category: {% for category in page.categories %} <a href="#">{{ category }}</a> {% endfor %}</bt></p>
-					<p><bt>Tags: {% for tag in page.tags %} <a href="#">{{ tag }}</a> {% endfor %}</bt></p>					
+					<p><bt>{{ site.data.ui-text[site.locale].category | default: "Category" }}: {% for category in page.categories %} <a href="#">{{ category }}</a> {% endfor %}</bt></p>
+					<p><bt>{{ site.data.ui-text[site.locale].tags | default: "Tags" }}: {% for tag in page.tags %} <a href="#">{{ tag }}</a> {% endfor %}</bt></p>					
 					<hr>
 					<p><a href="{{ "/blog/" | relative_url }}"># {{ site.data.ui-text[site.locale].back | default: "Back" }}</a></p>
 				</div>

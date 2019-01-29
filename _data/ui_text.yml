@@ -3,6 +3,11 @@
 # English (default)
 # -----------------
 en: &DEFAULT_EN
+  client                     : "Client"
+  type                       : "Type"
+  date                       : "Date"
+  back                       : "Back"
+  continue_reading           : "Continue reading"
   contact_form_subject       : "Subject"
   contact_form_name          : "Name"
   contact_form_email         : "Email Address"

@@ -16,7 +16,7 @@ layout: base
         <p>{{ content }}</p>
 	</div><!-- /row -->
 	<div class="row mt centered">	
-		<p><bt>Client: <a href="#">{{ page.client }}</a></bt> - <bt>Type: <a href="#">{{ page.type }}</a></bt> - <bt>Date: <a href="#">{{ page.date | date: "%B %-d, %Y" }}</a></bt></p>
+		<p><bt>{{ site.data.ui-text[site.locale].client | default: "Client" }}: <a href="#">{{ page.client }}</a></bt> - <bt>{{ site.data.ui-text[site.locale].type | default: "Type" }}: <a href="#">{{ page.type }}</a></bt> - <bt>{{ site.data.ui-text[site.locale].date | default: "Date" }}: <a href="#">{{ page.date | date: "%B %-d, %Y" }}</a></bt></p>
 	</div>
 	
 </div><!-- /container -->

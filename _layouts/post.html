@@ -10,7 +10,7 @@ layout: base
 					<p><img src="{{ "/assets/img/user.png" | relative_url }}" width="50px" height="50px"> <ba>{{ page.author }}</ba></p>
 					<p><bd>{{ page.date | date: "%B %-d, %Y" }}</bd></p>
 					<h4>{{ page.title }}</h4>
-					<p>{% if page.img %}<img class="img-responsive" src="{{ page.img | relative_url }}" alt="">{% endif %}</p>
+					<p>{% if page.img %}<img class="img-responsive" src="{{ page.img | relative_url }}" alt="{{ page.title }}">{% endif %}</p>
 					<p>{{ content }}</p>
 					<br>
 					<p><bt>{{ site.data.ui-text[site.locale].category | default: "Category" }}: {% for category in page.categories %} <a href="#">{{ category }}</a> {% endfor %}</bt></p>

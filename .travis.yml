@@ -2,7 +2,7 @@ language: ruby
 cache: bundler
 branches:
   only:
-  - gh-pages
+  - master
   - /.*/
 rvm:
   - 2.3.6

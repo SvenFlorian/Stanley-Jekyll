@@ -27,6 +27,17 @@ en-AU:
 # Danish
 # ------
 da: &DEFAULT_DA
+  category                   : "Kategori"
+  tags                       : "Tags"
+  client                     : "Klient"
+  type                       : "Type"
+  date                       : "Dato"
+  back                       : "Tilbage"
+  continue_reading           : "Læs mere"
+  contact_form_subject       : "Emne"
+  contact_form_name          : "Navn"
+  contact_form_email         : "E-mail"
+  contact_form_message       : "Besked"
   contact_form_submit        : "Send"
 da-DK:
   <<: *DEFAULT_DA

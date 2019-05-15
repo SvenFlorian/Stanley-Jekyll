@@ -13,7 +13,7 @@ layout: base
 		</div>
 	</div>
 	<div class="row mt centered">
-        <p>{{ content }}</p>
+        {{ content }}
 	</div><!-- /row -->
 	<div class="row mt centered">	
 		<p><bt>{{ site.data.ui-text[site.locale].client | default: "Client" }}: <a href="#">{{ page.client }}</a></bt> - <bt>{{ site.data.ui-text[site.locale].type | default: "Type" }}: <a href="#">{{ page.type }}</a></bt> - <bt>{{ site.data.ui-text[site.locale].date | default: "Date" }}: <a href="#">{{ page.date | date: "%B %-d, %Y" }}</a></bt></p>

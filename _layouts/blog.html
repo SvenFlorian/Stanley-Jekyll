@@ -14,11 +14,11 @@ layout: base
                             <p><bd>{{ post.date | date: "%B %-d, %Y" }}</bd></p>
                             <h4><a href="{{ post.url | relative_url }}" style="text-decoration : none; color : #000;">{{ post.title }}</a></h4>
                             {% if post.img %}<p><img src="{{ post.img }}"></p>{% endif %}
-                            <p>{% if post.excerpt %}
+                            {% if post.excerpt %}
                                  {{ post.excerpt }}
                                {% else %}
                                  {{ post.description}}
-                               {% endif %}</p>
+                               {% endif %}
                             <p><a href="{{ post.url | relative_url }}">{{ site.data.ui-text[site.locale].continue_reading | default: "Continue reading" }}</a></p>
                         </div>
                     </div><!-- /row -->

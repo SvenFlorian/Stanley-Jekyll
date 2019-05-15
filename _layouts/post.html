@@ -14,9 +14,7 @@ layout: base
 					{{ content }}
 					<br>
 					<p><bt>{{ site.data.ui-text[site.locale].category | default: "Category" }}: {% for category in page.categories %} <a href="#">{{ category }}</a> {% endfor %}</bt></p>
-					<p><bt>{{ site.data.ui-text[site.locale].tags | default: "Tags" }}: {% for tag in page.tags %} <a href="#">{{ tag }}</a> {% endfor %}</bt></p>					
-					<hr>
-					<p><a href="{{ "/blog/" | relative_url }}"># {{ site.data.ui-text[site.locale].back | default: "Back" }}</a></p>
+					<p><bt>{{ site.data.ui-text[site.locale].tags | default: "Tags" }}: {% for tag in page.tags %} <a href="#">{{ tag }}</a> {% endfor %}</bt></p>
 				</div>
 
 			</div><!-- /row -->

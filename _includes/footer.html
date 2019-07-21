@@ -2,35 +2,28 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">
-				<h4>My Bunker</h4>
+				<h4>{{ site.footer.address_headline }}</h4>
 				<p>
-					Some Address 987,<br/>
-					+34 9054 5455, <br/>
-					Madrid, Spain.
+					{% for adress in site.address %}
+					{{ adress }} <br>
+					{% endfor %}
 				</p>
 			</div><!-- /col-lg-4 -->
-			
+
 			<div class="col-lg-4">
-				<h4>My Links</h4>
+				<h4>{{ site.footer.links_headline }}</h4>
 				<p>
-					<a href="#">Dribbble</a><br/>
-					<a href="#">Twitter</a><br/>
-					<a href="#">Facebook</a>
+					{% for network in site.footer.links %}
+					<a href="{{ network.url }}" class="btn-social btn-outline">{{ network.title }}</a><br />
+					{% endfor %}
 				</p>
 			</div><!-- /col-lg-4 -->
-			
+
 			<div class="col-lg-4">
-				<h4>About Stanley</h4>
-				<p>This cute theme was created to showcase your work in a simple way. Use it wisely.</p>
+				<h4>{{ site.footer.about_headline }}</h4>
+				<p>{{ site.footer.about }}</p>
 			</div><!-- /col-lg-4 -->
-		
+
 		</div>
-	
 	</div>
 </div>
-
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>

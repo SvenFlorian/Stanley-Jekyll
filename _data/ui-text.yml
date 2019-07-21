@@ -1,0 +1,43 @@
+# User interface text and labels
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  category                   : "Category"
+  tags                       : "Tags"
+  client                     : "Client"
+  type                       : "Type"
+  date                       : "Date"
+  back                       : "Back"
+  continue_reading           : "Continue reading"
+  contact_form_subject       : "Subject"
+  contact_form_name          : "Name"
+  contact_form_email         : "Email Address"
+  contact_form_message       : "Message"
+  contact_form_submit        : "Submit"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Danish
+# ------
+da: &DEFAULT_DA
+  category                   : "Kategori"
+  tags                       : "Tags"
+  client                     : "Klient"
+  type                       : "Type"
+  date                       : "Dato"
+  back                       : "Tilbage"
+  continue_reading           : "Læs mere"
+  contact_form_subject       : "Emne"
+  contact_form_name          : "Navn"
+  contact_form_email         : "E-mail"
+  contact_form_message       : "Besked"
+  contact_form_submit        : "Send"
+da-DK:
+  <<: *DEFAULT_DA

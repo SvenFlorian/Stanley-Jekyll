@@ -7,14 +7,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">STANLEY</a>
+          {% if site.logo %}
+          <a class="navbar-brand pull-left" href="{{ "/" | relative_url }}"><img src="{{ site.logo | relative_url }}" title="{{ site.title }}" alt="{{ site.title }}"></a>
+          {% else %}
+          <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+          {% endif %}
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{ "/work/" | prepend: site.baseurl }}">Work</a></li>
-            <li><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
-            <li><a href="{{ "/blog/" | prepend: site.baseurl }}">Blog</a></li>
-            <li><a href="{{ "/contact/" | prepend: site.baseurl }}">Contact</a></li>
+            {% for navigation in site.data.navigation['main'] %}
+            <li><a href="{{ navigation.url | relative_url }}">{{ navigation.title }}</a></li>
+            {% endfor %}
           </ul>
         </div><!--/.nav-collapse -->
       </div>

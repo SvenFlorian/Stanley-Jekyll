@@ -1,0 +1,23 @@
+language: ruby
+cache: bundler
+branches:
+  only:
+  - master
+  - /.*/
+rvm:
+  - 2.3.6
+  - 2.4.1  
+  - 2.5.3
+matrix:
+  allow_failures:
+    - rvm: 2.3.6
+    - rvm: 2.4.1
+  fast_finish: true
+install:
+  - travis_retry bundle install
+script:
+  - bundle exec jekyll build
+  - bundle exec rake test
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer

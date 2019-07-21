@@ -1,5 +1,5 @@
 ---
-layout: my-site
+layout: base
 ---
 
 	<!-- +++++ Post +++++ -->
@@ -7,16 +7,14 @@ layout: my-site
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<p><img src="{{ "/assets/img/user.png" | prepend: site.baseurl }}" width="50px" height="50px"> <ba>{{ page.author }}</ba></p>
+					<p><img src="{{ "/assets/img/user.png" | relative_url }}" width="50px" height="50px"> <ba>{{ page.author }}</ba></p>
 					<p><bd>{{ page.date | date: "%B %-d, %Y" }}</bd></p>
 					<h4>{{ page.title }}</h4>
-					<p>{% if page.img %}<img class="img-responsive" src="{{ page.img }}" alt="">{% endif %}</p>
-					<p>{{ content }}</p>
+					{% if page.img %}<p><img class="img-responsive" src="{{ page.img | relative_url }}" alt="{{ page.title }}"></p>{% endif %}
+					{{ content }}
 					<br>
-					<p><bt>Category: {% for category in page.categories %} <a href="#">{{ category }}</a> {% endfor %}</bt></p>
-					<p><bt>Tags: {% for tag in page.tags %} <a href="#">{{ tag }}</a> {% endfor %}</bt></p>					
-					<hr>
-					<p><a href="{{ "/blog/" | prepend: site.baseurl }}"># Back</a></p>
+					<p><bt>{{ site.data.ui-text[site.locale].category | default: "Category" }}: {% for category in page.categories %} <a href="#">{{ category }}</a> {% endfor %}</bt></p>
+					<p><bt>{{ site.data.ui-text[site.locale].tags | default: "Tags" }}: {% for tag in page.tags %} <a href="#">{{ tag }}</a> {% endfor %}</bt></p>
 				</div>
 
 			</div><!-- /row -->

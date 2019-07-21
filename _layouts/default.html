@@ -1,9 +1,14 @@
 ---
-layout: my-site
+layout: base
 ---
 
 <div class="page-content">
     <div class="wrap">
-    {{ content }}
+        <div class="container pt">
+            {% unless page.hide_headline == true %}
+                {% include headline.html %}
+            {% endunless %}
+            {{ content }}
+        </div>
     </div>
 </div>
